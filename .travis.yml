@@ -1,0 +1,11 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- '10.14.1'
+script:
+- npm run lint
+- travis_wait 30 npm run build
+install:
+  - npm i -g npm@11.1.0 # this should be deleted once 11.1.X is out of "pre-release"
+  - npm ci             # instead of default npm install 
