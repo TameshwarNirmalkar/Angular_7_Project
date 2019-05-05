@@ -1,0 +1,41 @@
+<div class="p-col-12">
+  <section>
+    <p-table [value]="appResourceList" [(selection)]="selectedResource" [scrollable]="true" scrollHeight="65vh"
+    [loading]="isLoading" styleClass="add-resource-table">
+      <ng-template pTemplate="header">
+        <tr>
+          <th class="text-center" style="width: 40px;">
+            <p-tableHeaderCheckbox styleClass="checkbox-cls"></p-tableHeaderCheckbox>
+          </th>
+          <th>Resource Type</th>
+          <th>Resource Name</th>
+          <th>Description</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData>
+        <tr>
+          <td class="text-center" style="width: 40px;">
+            <p-tableCheckbox [value]="rowData" styleClass="checkbox-cls"></p-tableCheckbox>
+          </td>
+          <td>
+            {{ rowData.resource_type }}
+          </td>
+          <td>
+            {{ rowData.resource_name }}
+          </td>
+          <td>
+            {{ rowData.department_id }}
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </section>
+  <section class="p-col-12">
+    <article class="p-grid p-align-center">
+      <span class="p-grid p-col p-justify-end">
+        <p-button icon="pi pi-save" label="Save" styleClass="btn-cls" (click)="saveResource()" [disabled]="selectedResource.length === 0"></p-button>
+      </span>
+    </article>
+  </section>
+
+</div>

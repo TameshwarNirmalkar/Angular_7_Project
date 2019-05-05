@@ -1,0 +1,10 @@
+@import './../../../../assets/styles/custom-bootstrap.scss';
+
+:host ::ng-deep {
+  flex: 1 0 100%;
+  background-color: $blue;
+
+  .ui-message {
+    width: 100%;
+  }
+}

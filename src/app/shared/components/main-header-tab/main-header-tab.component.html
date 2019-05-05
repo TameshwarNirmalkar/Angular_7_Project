@@ -1,0 +1,9 @@
+<section class="p-grid width-100 p-align-center border-bottom">
+  <h3 class="p-col-fixed pd-tb-7 mb-0"> {{ headingLabel }}</h3>
+  <article class="p-col p-0">
+    <app-common-menu-tabs [tabList]="tabList" *ngIf="tabList" (closeTabEvent)="closeTabEvent($event)"></app-common-menu-tabs> 
+  </article>
+  <article class="p-col-fixed p-justify-end p-0">
+    <app-refresh-tab (refreshTabEvent)="onRefreshTabEvent()"></app-refresh-tab>
+  </article>
+</section>

@@ -1,0 +1,20 @@
+<div class="p-grid p-align-center p-justify-center p-nogutter" style="height: 100%">
+  <section class="w-25">
+    <div class="form-group">
+        <label>User Name</label>
+        <input type="text" class="form-control" [(ngModel)]="user.userName" placeholder="shanti.lal" />
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" [(ngModel)]="user.userPassword" placeholder="*********" (keyup.enter)="onLogin()" />
+    </div>
+    <div class="form-group">
+      <p-button label="Login" disable="isLoading" (onClick)="onLogin()" [disabled]="!user.userName && !user.userPassword"></p-button>
+    </div>
+  </section>
+  
+</div>
+
+<app-spinner [isLoading]="isLoading"></app-spinner>
+
+<!-- <p-messages [value]="msgs" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'300ms'" styleClass="toast-message" ></p-messages> -->

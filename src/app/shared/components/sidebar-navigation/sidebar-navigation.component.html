@@ -1,0 +1,15 @@
+<div class="p-col-fixed main-navigation" [ngClass]="(sidebarToggle) ? 'expand-sidebar': 'collapsed-sidebar'">
+    <ul class="list-unstyled main_menu_link">
+      <li class="d-flex p-align-center" (click)="toggleSlider()">
+        <a class="d-flex p-align-center p-justify-center">
+          <em class="fa fa-th-large pt-2 pb-2"></em>
+        </a>
+      </li>
+      <li class="d-flex" *ngFor="let item of navigationList" routerLinkActive="active">
+        <a class="d-flex p-align-center" [routerLink]="item.routerLink">
+          <em class="fa p-col-fixed {{ item.icon }}"></em>
+          <span class="collapsed-hide p-col"> {{ item.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>

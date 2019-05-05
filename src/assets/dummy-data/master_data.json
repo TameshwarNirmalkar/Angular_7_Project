@@ -1,0 +1,2293 @@
+{
+  "error_status": false,
+  "code": "USER_REQUEST_SUCCESS",
+  "message": "Request fulfilled successfully",
+  "data": [
+    {
+      "company_code": 1,
+      "company_key": "SRK",
+      "company_name": "SRK",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": [
+          {
+            "user_code": 139,
+            "user_fullname": "SHOW ( S.ADMIN )",
+            "user_short_name": "EVENT"
+          }
+        ]
+      },
+      "department_list": [
+        {
+          "department_code": 1,
+          "department_key": "STK",
+          "department_name": "SRK Inventory Department",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": [
+                {
+                  "user_code": 116,
+                  "user_fullname": "JIGNESH BHALALA ( ADMIN )",
+                  "user_short_name": "JBB"
+                },
+                {
+                  "user_code": 129,
+                  "user_fullname": "BHAVESH SORATHIYA ( ADMIN )",
+                  "user_short_name": "BGS"
+                },
+                {
+                  "user_code": 171,
+                  "user_fullname": "SHOW ADMIN",
+                  "user_short_name": "SHOWA"
+                }
+              ]
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 52,
+                  "user_fullname": "DINESH VANDRA",
+                  "user_short_name": "DNV"
+                },
+                {
+                  "user_code": 130,
+                  "user_fullname": "JITU SURESH MODI",
+                  "user_short_name": "JSM"
+                },
+                {
+                  "user_code": 131,
+                  "user_fullname": "MITESH SHAH",
+                  "user_short_name": "SMS"
+                },
+                {
+                  "user_code": 133,
+                  "user_fullname": "SATISH DEOKAR",
+                  "user_short_name": "SRD"
+                },
+                {
+                  "user_code": 134,
+                  "user_fullname": "KAPIL ",
+                  "user_short_name": "KVG"
+                },
+                {
+                  "user_code": 143,
+                  "user_fullname": "RAVI BOKHA",
+                  "user_short_name": "RBB"
+                },
+                {
+                  "user_code": 144,
+                  "user_fullname": "HARSHAD VAGHASIYA ",
+                  "user_short_name": "HPV"
+                },
+                {
+                  "user_code": 191,
+                  "user_fullname": "PRACHI MAHADE",
+                  "user_short_name": "PPM"
+                },
+                {
+                  "user_code": 206,
+                  "user_fullname": "hetal",
+                  "user_short_name": "had"
+                },
+                {
+                  "user_code": 209,
+                  "user_fullname": "Account 3",
+                  "user_short_name": "A3"
+                },
+                {
+                  "user_code": 210,
+                  "user_fullname": "priya dave",
+                  "user_short_name": "PD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 2,
+          "department_key": "GRD",
+          "department_name": "Grading",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": [
+                {
+                  "user_code": 220,
+                  "user_fullname": "TEJAS GADHIYA",
+                  "user_short_name": "TGB"
+                }
+              ]
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": [
+                {
+                  "user_code": 38,
+                  "user_fullname": "CHIRAG CHOPRA ( ADMIN )",
+                  "user_short_name": "CRC"
+                },
+                {
+                  "user_code": 217,
+                  "user_fullname": "vidhi",
+                  "user_short_name": "vids"
+                }
+              ]
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 35,
+                  "user_fullname": "ANKIT BHUVAD",
+                  "user_short_name": "AKB"
+                },
+                {
+                  "user_code": 36,
+                  "user_fullname": "ARVIND RAVAL",
+                  "user_short_name": "ARR"
+                },
+                {
+                  "user_code": 37,
+                  "user_fullname": "BHAVESH RAUT",
+                  "user_short_name": "BDR"
+                },
+                {
+                  "user_code": 39,
+                  "user_fullname": "DIXIT SAWANT",
+                  "user_short_name": "DDS"
+                },
+                {
+                  "user_code": 40,
+                  "user_fullname": "HARIKRISHNA MEHTA",
+                  "user_short_name": "HKM"
+                },
+                {
+                  "user_code": 41,
+                  "user_fullname": "JITENDRA VISHWAKARMA",
+                  "user_short_name": "JAV"
+                },
+                {
+                  "user_code": 42,
+                  "user_fullname": "MANGESH TEMKAR",
+                  "user_short_name": "MDT"
+                },
+                {
+                  "user_code": 44,
+                  "user_fullname": "PRAKASH NARKAR",
+                  "user_short_name": "PJN"
+                },
+                {
+                  "user_code": 45,
+                  "user_fullname": "PRAVIN KARPE",
+                  "user_short_name": "PRK"
+                },
+                {
+                  "user_code": 46,
+                  "user_fullname": "RUPESH RAUT",
+                  "user_short_name": "RRR"
+                },
+                {
+                  "user_code": 47,
+                  "user_fullname": "SACHIN BENDRE",
+                  "user_short_name": "SSB"
+                },
+                {
+                  "user_code": 49,
+                  "user_fullname": "YOGESH BAIT",
+                  "user_short_name": "YBB"
+                },
+                {
+                  "user_code": 50,
+                  "user_fullname": "HIREN GOTI",
+                  "user_short_name": "HIG"
+                },
+                {
+                  "user_code": 51,
+                  "user_fullname": "RAMESH MODI",
+                  "user_short_name": "RCM"
+                },
+                {
+                  "user_code": 53,
+                  "user_fullname": "SHANTOSH KANDEKAR",
+                  "user_short_name": "SSK"
+                },
+                {
+                  "user_code": 54,
+                  "user_fullname": "GRADING TRAINEE-1",
+                  "user_short_name": "GR1"
+                },
+                {
+                  "user_code": 57,
+                  "user_fullname": "SMEET DOSHI",
+                  "user_short_name": "SSD"
+                },
+                {
+                  "user_code": 111,
+                  "user_fullname": "NITIN J. NIKAM",
+                  "user_short_name": "NJN"
+                },
+                {
+                  "user_code": 147,
+                  "user_fullname": "ABHINAV PATEL",
+                  "user_short_name": "AJP"
+                },
+                {
+                  "user_code": 148,
+                  "user_fullname": "SAGAR KHICHDIYA",
+                  "user_short_name": "SAK"
+                },
+                {
+                  "user_code": 151,
+                  "user_fullname": "GRADING TRAINEE-2",
+                  "user_short_name": "GR2"
+                },
+                {
+                  "user_code": 152,
+                  "user_fullname": "GRADING TRAINEE-3",
+                  "user_short_name": "GR3"
+                },
+                {
+                  "user_code": 153,
+                  "user_fullname": "GRADING TRAINEE-4",
+                  "user_short_name": "GR4"
+                },
+                {
+                  "user_code": 154,
+                  "user_fullname": "GRADING TRAINEE-5",
+                  "user_short_name": "GR5"
+                },
+                {
+                  "user_code": 164,
+                  "user_fullname": "AKSHAT R. SHAH",
+                  "user_short_name": "SAR"
+                },
+                {
+                  "user_code": 165,
+                  "user_fullname": "HARDIK J. KANKOTIA",
+                  "user_short_name": "HJK"
+                },
+                {
+                  "user_code": 166,
+                  "user_fullname": "VIPUL C. SOLANKI",
+                  "user_short_name": "VCS"
+                },
+                {
+                  "user_code": 172,
+                  "user_fullname": "NIRAV LATHIYA",
+                  "user_short_name": "NVL"
+                },
+                {
+                  "user_code": 181,
+                  "user_fullname": "JIGAR B. CHABHADIYA",
+                  "user_short_name": "JBC"
+                },
+                {
+                  "user_code": 184,
+                  "user_fullname": "HARSH R. SHAH",
+                  "user_short_name": "HRS"
+                },
+                {
+                  "user_code": 185,
+                  "user_fullname": "BHAVESH P. VAGHELA",
+                  "user_short_name": "BPV"
+                },
+                {
+                  "user_code": 189,
+                  "user_fullname": "GRADING-WEB-CHECK",
+                  "user_short_name": "GWC"
+                },
+                {
+                  "user_code": 197,
+                  "user_fullname": "SIDDHARTH P. THADESHWAR",
+                  "user_short_name": "SPT"
+                },
+                {
+                  "user_code": 198,
+                  "user_fullname": "KARTIK A. GOYANI",
+                  "user_short_name": "KAG"
+                },
+                {
+                  "user_code": 199,
+                  "user_fullname": "MONIL S. JASANI",
+                  "user_short_name": "MSJ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 3,
+          "department_key": "MAT",
+          "department_name": "Market Analysis Team",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": [
+                {
+                  "user_code": 94,
+                  "user_fullname": "CHIRAG MANANI ( ADMIN )",
+                  "user_short_name": "CHM"
+                },
+                {
+                  "user_code": 137,
+                  "user_fullname": "MAT ( ADMIN )",
+                  "user_short_name": "MATA"
+                }
+              ]
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 43,
+                  "user_fullname": "NITISH JANI",
+                  "user_short_name": "NNJ"
+                },
+                {
+                  "user_code": 56,
+                  "user_fullname": "AKSHAY PARMAR",
+                  "user_short_name": "ARP"
+                },
+                {
+                  "user_code": 95,
+                  "user_fullname": "JIGAR RAJODIYA",
+                  "user_short_name": "JRR"
+                },
+                {
+                  "user_code": 96,
+                  "user_fullname": "DHRUVIL SHETH",
+                  "user_short_name": "DHS"
+                },
+                {
+                  "user_code": 97,
+                  "user_fullname": "RAKESH PATEL",
+                  "user_short_name": "RJP"
+                },
+                {
+                  "user_code": 98,
+                  "user_fullname": "ROHIT VORA",
+                  "user_short_name": "RJV"
+                },
+                {
+                  "user_code": 99,
+                  "user_fullname": "RONAK SINGHI",
+                  "user_short_name": "RSS"
+                },
+                {
+                  "user_code": 100,
+                  "user_fullname": "VIJAY BALAR",
+                  "user_short_name": "VNB "
+                },
+                {
+                  "user_code": 150,
+                  "user_fullname": "Rahul .R.Chitaliya",
+                  "user_short_name": "RRD"
+                },
+                {
+                  "user_code": 155,
+                  "user_fullname": "TRAINEE MAT 1",
+                  "user_short_name": "TMAT1"
+                },
+                {
+                  "user_code": 156,
+                  "user_fullname": "TRAINEE MAT 2",
+                  "user_short_name": "TMAT2"
+                },
+                {
+                  "user_code": 157,
+                  "user_fullname": "TRAINEE MAT 3",
+                  "user_short_name": "TMAT3"
+                },
+                {
+                  "user_code": 170,
+                  "user_fullname": "AJAY JASWANTBHAI PARMAR",
+                  "user_short_name": "PAJ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 4,
+          "department_key": "LAB",
+          "department_name": "Laboratory",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 5,
+          "department_key": "PHO",
+          "department_name": "PHOTO",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 6,
+          "department_key": "MFG",
+          "department_name": "MANUFACTURING",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 92,
+                  "user_fullname": "NIRAV NAROLA",
+                  "user_short_name": "NN"
+                },
+                {
+                  "user_code": 93,
+                  "user_fullname": "BIPIN K.LUKHI",
+                  "user_short_name": "BL"
+                },
+                {
+                  "user_code": 138,
+                  "user_fullname": "SANJAY DESAI",
+                  "user_short_name": "SMD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 7,
+          "department_key": "GMFG",
+          "department_name": "GRADING MFG",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 55,
+                  "user_fullname": "MUKESH M.PALAIDYA",
+                  "user_short_name": "MMP"
+                },
+                {
+                  "user_code": 58,
+                  "user_fullname": "NARESH T.JALALPARA",
+                  "user_short_name": "NTJ"
+                },
+                {
+                  "user_code": 59,
+                  "user_fullname": "ANIL B.GONDALIYA",
+                  "user_short_name": "ABG"
+                },
+                {
+                  "user_code": 60,
+                  "user_fullname": "ANIL L.NADODA",
+                  "user_short_name": "ALN"
+                },
+                {
+                  "user_code": 61,
+                  "user_fullname": "AJAY R.SAVLIYA",
+                  "user_short_name": "ARS"
+                },
+                {
+                  "user_code": 62,
+                  "user_fullname": "BHAVESH G.PATEL",
+                  "user_short_name": "BGP"
+                },
+                {
+                  "user_code": 63,
+                  "user_fullname": "CHIRAG  H. ITALIYA",
+                  "user_short_name": "CHI"
+                },
+                {
+                  "user_code": 64,
+                  "user_fullname": "SUNIL G.CHALODIYA",
+                  "user_short_name": "SGC"
+                },
+                {
+                  "user_code": 65,
+                  "user_fullname": "DHARMESH D.SANKAR",
+                  "user_short_name": "DSD"
+                },
+                {
+                  "user_code": 66,
+                  "user_fullname": "DIPAK D.LUKHI",
+                  "user_short_name": "DDL"
+                },
+                {
+                  "user_code": 67,
+                  "user_fullname": "DHARMESH  M. DOBARIYA",
+                  "user_short_name": "DMD"
+                },
+                {
+                  "user_code": 68,
+                  "user_fullname": "HIREN V.RASHIYA",
+                  "user_short_name": "HVR"
+                },
+                {
+                  "user_code": 69,
+                  "user_fullname": "HARESH  D. DHOLAKIYA",
+                  "user_short_name": "HDD"
+                },
+                {
+                  "user_code": 70,
+                  "user_fullname": "JIGNESH G.ASALALIYA",
+                  "user_short_name": "JGA"
+                },
+                {
+                  "user_code": 71,
+                  "user_fullname": "JIVNESH H. UKANI",
+                  "user_short_name": "JHU"
+                },
+                {
+                  "user_code": 72,
+                  "user_fullname": "VIPUL K. JOTANYA",
+                  "user_short_name": "VKJ"
+                },
+                {
+                  "user_code": 73,
+                  "user_fullname": "KEVAL M.RIJIYA",
+                  "user_short_name": "KMR"
+                },
+                {
+                  "user_code": 74,
+                  "user_fullname": "MEHUL N.DHOLAKIYA",
+                  "user_short_name": "MND"
+                },
+                {
+                  "user_code": 75,
+                  "user_fullname": "MITUL R.DHOLAKIYA",
+                  "user_short_name": "MRD"
+                },
+                {
+                  "user_code": 76,
+                  "user_fullname": "NILESH G. MERULIYA",
+                  "user_short_name": "NGM"
+                },
+                {
+                  "user_code": 77,
+                  "user_fullname": "NITIN V. DHAMELIYA",
+                  "user_short_name": "NVD"
+                },
+                {
+                  "user_code": 78,
+                  "user_fullname": "PARESH B. ASHLALIYA",
+                  "user_short_name": "PBA"
+                },
+                {
+                  "user_code": 79,
+                  "user_fullname": "BHAVESH M. BHESANIYA",
+                  "user_short_name": "BMB"
+                },
+                {
+                  "user_code": 80,
+                  "user_fullname": "PRANAV  J. TRIVEDI",
+                  "user_short_name": "PJT"
+                },
+                {
+                  "user_code": 81,
+                  "user_fullname": "PRADIP  J. KAKADIYA",
+                  "user_short_name": "PJK"
+                },
+                {
+                  "user_code": 82,
+                  "user_fullname": "PARESH K. PADSHALA",
+                  "user_short_name": "PAR"
+                },
+                {
+                  "user_code": 83,
+                  "user_fullname": "RAM G. RIGEYA",
+                  "user_short_name": "RGR"
+                },
+                {
+                  "user_code": 84,
+                  "user_fullname": "SHAILESH C. GHODHANI",
+                  "user_short_name": "SCG"
+                },
+                {
+                  "user_code": 85,
+                  "user_fullname": "SUJAL  L. GAJERA",
+                  "user_short_name": "SLG"
+                },
+                {
+                  "user_code": 86,
+                  "user_fullname": "SANJAY B.SHINGALA",
+                  "user_short_name": "SBS"
+                },
+                {
+                  "user_code": 87,
+                  "user_fullname": "VIPUL K.CHOVATIYA",
+                  "user_short_name": "VKC"
+                },
+                {
+                  "user_code": 88,
+                  "user_fullname": "VIJAY  H. MOTISARIYA",
+                  "user_short_name": "VHM"
+                },
+                {
+                  "user_code": 89,
+                  "user_fullname": "KIRIT  D. PATEL",
+                  "user_short_name": "KDP"
+                },
+                {
+                  "user_code": 90,
+                  "user_fullname": "KARTIK B.BABARIYA",
+                  "user_short_name": "KBB"
+                },
+                {
+                  "user_code": 91,
+                  "user_fullname": "JALPESH K.PATEL",
+                  "user_short_name": "JKP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 8,
+          "department_key": "MATMFG",
+          "department_name": "MAT MFG",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": [
+                {
+                  "user_code": 101,
+                  "user_fullname": "SAMIR NAROLA ( ADMIN )",
+                  "user_short_name": "SAM"
+                }
+              ]
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 102,
+                  "user_fullname": "DILIP BODAR",
+                  "user_short_name": "MDI"
+                },
+                {
+                  "user_code": 103,
+                  "user_fullname": "DILIP SHAVALIA",
+                  "user_short_name": "SDS"
+                },
+                {
+                  "user_code": 104,
+                  "user_fullname": "HITESH MULANI",
+                  "user_short_name": "HJM"
+                },
+                {
+                  "user_code": 105,
+                  "user_fullname": "MAHENDRA VAGHSHIYA",
+                  "user_short_name": "MMV"
+                },
+                {
+                  "user_code": 106,
+                  "user_fullname": "NARESH THUMMAR",
+                  "user_short_name": "NDT"
+                },
+                {
+                  "user_code": 107,
+                  "user_fullname": "NEW USER IN MAT",
+                  "user_short_name": "STP"
+                },
+                {
+                  "user_code": 108,
+                  "user_fullname": "PANKIL PATEL",
+                  "user_short_name": "PKP"
+                },
+                {
+                  "user_code": 109,
+                  "user_fullname": "PRADIP RACHHADIYA",
+                  "user_short_name": "PBR"
+                },
+                {
+                  "user_code": 110,
+                  "user_fullname": "MANISH GORANI",
+                  "user_short_name": "MNP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 9,
+          "department_key": "CERT",
+          "department_name": "CERTIFICATE",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": [
+                {
+                  "user_code": 13,
+                  "user_fullname": "AVDHUT ( ADMIN )",
+                  "user_short_name": "AMG"
+                },
+                {
+                  "user_code": 14,
+                  "user_fullname": "PRITESH BHAMBHID ( ADMIN )",
+                  "user_short_name": "BPM"
+                }
+              ]
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 213,
+                  "user_fullname": "mansi",
+                  "user_short_name": "MT"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 10,
+          "department_key": "SALES",
+          "department_name": "Sales",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": [
+                {
+                  "user_code": 203,
+                  "user_fullname": "Satish Kayada",
+                  "user_short_name": "SK"
+                }
+              ]
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": [
+                {
+                  "user_code": 12,
+                  "user_fullname": "SANJAY UKANI",
+                  "user_short_name": "SRU"
+                },
+                {
+                  "user_code": 25,
+                  "user_fullname": "PARESH BHATIYA ( ADMIN )",
+                  "user_short_name": "PMB"
+                },
+                {
+                  "user_code": 28,
+                  "user_fullname": "RAHUL( ADMIN )",
+                  "user_short_name": "RN"
+                },
+                {
+                  "user_code": 29,
+                  "user_fullname": "RAJESH GAJERA",
+                  "user_short_name": "RAJ"
+                },
+                {
+                  "user_code": 48,
+                  "user_fullname": "SANDEEP DHOLIYA ( ADMIN ) ",
+                  "user_short_name": "SDD"
+                },
+                {
+                  "user_code": 123,
+                  "user_fullname": "MANSHUKH",
+                  "user_short_name": "MB"
+                },
+                {
+                  "user_code": 124,
+                  "user_fullname": "MANSHUKH BUDHELIYA (A)",
+                  "user_short_name": "MBB"
+                },
+                {
+                  "user_code": 132,
+                  "user_fullname": "PARIMAL ( ADMIN )",
+                  "user_short_name": "PMP"
+                },
+                {
+                  "user_code": 136,
+                  "user_fullname": "GOLDI ( S. ADMIN )",
+                  "user_short_name": "SGXP"
+                },
+                {
+                  "user_code": 140,
+                  "user_fullname": "ANKIT SETHNA ( ADMIN )",
+                  "user_short_name": "AYS"
+                },
+                {
+                  "user_code": 141,
+                  "user_fullname": "VISHAL (ADMIN)",
+                  "user_short_name": "VM"
+                },
+                {
+                  "user_code": 158,
+                  "user_fullname": "KHOKHARIYA HITESH (ADMIN)",
+                  "user_short_name": "HK"
+                },
+                {
+                  "user_code": 163,
+                  "user_fullname": "SHAKIRA",
+                  "user_short_name": "SHK"
+                },
+                {
+                  "user_code": 190,
+                  "user_fullname": "VIMAL RAJODIA",
+                  "user_short_name": "VKR"
+                },
+                {
+                  "user_code": 192,
+                  "user_fullname": "CHANDRAKANT JOSI",
+                  "user_short_name": "JCD"
+                },
+                {
+                  "user_code": 207,
+                  "user_fullname": "Account 1",
+                  "user_short_name": "A1"
+                }
+              ]
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 15,
+                  "user_fullname": "ALPESH NAROLA",
+                  "user_short_name": "AIN"
+                },
+                {
+                  "user_code": 16,
+                  "user_fullname": "ASHOK NADODA",
+                  "user_short_name": "AGN"
+                },
+                {
+                  "user_code": 18,
+                  "user_fullname": "JAINISH GAJERA",
+                  "user_short_name": "JLG"
+                },
+                {
+                  "user_code": 19,
+                  "user_fullname": "JAYDEEP GADHIYA",
+                  "user_short_name": "JAY"
+                },
+                {
+                  "user_code": 20,
+                  "user_fullname": "KALPESH BHATIYA",
+                  "user_short_name": "KLB"
+                },
+                {
+                  "user_code": 21,
+                  "user_fullname": "KARTIK NAVADIYA",
+                  "user_short_name": "KVP"
+                },
+                {
+                  "user_code": 22,
+                  "user_fullname": "KASHYAP DHOLIYA",
+                  "user_short_name": "KPD"
+                },
+                {
+                  "user_code": 23,
+                  "user_fullname": "KEVAL JIVANI",
+                  "user_short_name": "KVJ"
+                },
+                {
+                  "user_code": 24,
+                  "user_fullname": "MILAN CHOPDA",
+                  "user_short_name": "MDC"
+                },
+                {
+                  "user_code": 27,
+                  "user_fullname": "PRABHU DHOLAKIA",
+                  "user_short_name": "PPD"
+                },
+                {
+                  "user_code": 30,
+                  "user_fullname": "Shreyans Dholakia ",
+                  "user_short_name": "SGD"
+                },
+                {
+                  "user_code": 31,
+                  "user_fullname": "TUSHAR CHILKA",
+                  "user_short_name": "TSC"
+                },
+                {
+                  "user_code": 32,
+                  "user_fullname": "VARUN GOHIL",
+                  "user_short_name": "VJG"
+                },
+                {
+                  "user_code": 33,
+                  "user_fullname": "VISHAL JODHANI",
+                  "user_short_name": "VMJ"
+                },
+                {
+                  "user_code": 34,
+                  "user_fullname": "ASHISH DESAI",
+                  "user_short_name": "ADD"
+                },
+                {
+                  "user_code": 112,
+                  "user_fullname": "DAVID SHANGHAI",
+                  "user_short_name": "DVD"
+                },
+                {
+                  "user_code": 113,
+                  "user_fullname": "DAVID SHENZHEN",
+                  "user_short_name": "DVS"
+                },
+                {
+                  "user_code": 114,
+                  "user_fullname": "HITESH KHOKHARIYA",
+                  "user_short_name": "HIT"
+                },
+                {
+                  "user_code": 115,
+                  "user_fullname": "JAMES",
+                  "user_short_name": "JMS"
+                },
+                {
+                  "user_code": 117,
+                  "user_fullname": "LESHEM",
+                  "user_short_name": "LSM"
+                },
+                {
+                  "user_code": 118,
+                  "user_fullname": "MICKEY",
+                  "user_short_name": "MKY"
+                },
+                {
+                  "user_code": 119,
+                  "user_fullname": "ROY",
+                  "user_short_name": "RY"
+                },
+                {
+                  "user_code": 120,
+                  "user_fullname": "WANGWEI",
+                  "user_short_name": "WW"
+                },
+                {
+                  "user_code": 121,
+                  "user_fullname": "ZHU",
+                  "user_short_name": "ZH"
+                },
+                {
+                  "user_code": 122,
+                  "user_fullname": "ERIC",
+                  "user_short_name": "ERC"
+                },
+                {
+                  "user_code": 125,
+                  "user_fullname": "MICHAEL",
+                  "user_short_name": "MIC"
+                },
+                {
+                  "user_code": 126,
+                  "user_fullname": "PATRICK",
+                  "user_short_name": "PAT"
+                },
+                {
+                  "user_code": 127,
+                  "user_fullname": "QUEENI",
+                  "user_short_name": "QNE"
+                },
+                {
+                  "user_code": 128,
+                  "user_fullname": "SHAILESH KHUNT",
+                  "user_short_name": "SMK"
+                },
+                {
+                  "user_code": 135,
+                  "user_fullname": "DHAVAL D. DIHORA",
+                  "user_short_name": "DDD"
+                },
+                {
+                  "user_code": 145,
+                  "user_fullname": "LOUIS",
+                  "user_short_name": "LOU"
+                },
+                {
+                  "user_code": 146,
+                  "user_fullname": "CHARMAINE",
+                  "user_short_name": "CHA"
+                },
+                {
+                  "user_code": 149,
+                  "user_fullname": "RAJESH MALAVIYA",
+                  "user_short_name": "RDM"
+                },
+                {
+                  "user_code": 159,
+                  "user_fullname": "LAREMAR LI",
+                  "user_short_name": "LL"
+                },
+                {
+                  "user_code": 160,
+                  "user_fullname": "FENNY",
+                  "user_short_name": "FEN"
+                },
+                {
+                  "user_code": 161,
+                  "user_fullname": "Raphie Lau ",
+                  "user_short_name": "RAPH"
+                },
+                {
+                  "user_code": 162,
+                  "user_fullname": "CHARLIE",
+                  "user_short_name": "CHL"
+                },
+                {
+                  "user_code": 167,
+                  "user_fullname": "DISHANT R. SHAH",
+                  "user_short_name": "DRS"
+                },
+                {
+                  "user_code": 174,
+                  "user_fullname": "ANKIT SHETNA ",
+                  "user_short_name": "AS"
+                },
+                {
+                  "user_code": 178,
+                  "user_fullname": "ARVIND NAROLA",
+                  "user_short_name": "APN"
+                },
+                {
+                  "user_code": 182,
+                  "user_fullname": "MANDY",
+                  "user_short_name": "MDY"
+                },
+                {
+                  "user_code": 183,
+                  "user_fullname": "EBBY",
+                  "user_short_name": "EBY"
+                },
+                {
+                  "user_code": 186,
+                  "user_fullname": "MITESH BHATIA",
+                  "user_short_name": "MIT"
+                },
+                {
+                  "user_code": 187,
+                  "user_fullname": "Z GRADING TEATING ",
+                  "user_short_name": "GTP"
+                },
+                {
+                  "user_code": 188,
+                  "user_fullname": "WANG YI",
+                  "user_short_name": "WY"
+                },
+                {
+                  "user_code": 193,
+                  "user_fullname": "HITESH N CHHELIYA",
+                  "user_short_name": "HNC"
+                },
+                {
+                  "user_code": 194,
+                  "user_fullname": "MANOJ B BUDHELIYA",
+                  "user_short_name": "MBP"
+                },
+                {
+                  "user_code": 195,
+                  "user_fullname": "SAHIL M. MALAVIYA",
+                  "user_short_name": "SMM"
+                },
+                {
+                  "user_code": 196,
+                  "user_fullname": "JIGAR BHIKADIYA",
+                  "user_short_name": "JRB"
+                },
+                {
+                  "user_code": 200,
+                  "user_fullname": "SRKAYS",
+                  "user_short_name": "SRKAYS"
+                },
+                {
+                  "user_code": 202,
+                  "user_fullname": "Ritesh Khatri",
+                  "user_short_name": "RK"
+                },
+                {
+                  "user_code": 204,
+                  "user_fullname": "Rushita Vaghasiya",
+                  "user_short_name": "SV"
+                },
+                {
+                  "user_code": 205,
+                  "user_fullname": "Test Admin",
+                  "user_short_name": "TADM"
+                },
+                {
+                  "user_code": 208,
+                  "user_fullname": "Account 2",
+                  "user_short_name": "A2"
+                },
+                {
+                  "user_code": 215,
+                  "user_fullname": "Anish Gandhi",
+                  "user_short_name": "AG"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 11,
+          "department_key": "KYC",
+          "department_name": "KYC Account",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 168,
+                  "user_fullname": "MAT BORDER FOR MUMBHAI",
+                  "user_short_name": "MAT1"
+                },
+                {
+                  "user_code": 169,
+                  "user_fullname": "MAT BORDER FOR MFG",
+                  "user_short_name": "MAT2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 12,
+          "department_key": "EXP",
+          "department_name": "Export Account",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 16,
+          "department_key": "Pur",
+          "department_name": "Purchase",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 142,
+                  "user_fullname": "SNEHAL",
+                  "user_short_name": "SRG"
+                },
+                {
+                  "user_code": 175,
+                  "user_fullname": "MAULIK BOKHA",
+                  "user_short_name": "MTB"
+                },
+                {
+                  "user_code": 176,
+                  "user_fullname": "RITIN KHENI",
+                  "user_short_name": "RTK"
+                },
+                {
+                  "user_code": 177,
+                  "user_fullname": "SUJIT SHAH",
+                  "user_short_name": "SRS"
+                },
+                {
+                  "user_code": 179,
+                  "user_fullname": "RAHUL PATEL",
+                  "user_short_name": "RHP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 17,
+          "department_key": "FC",
+          "department_name": "FANCY COLOUR",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 22,
+          "department_key": "0.99",
+          "department_name": "0.99",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 23,
+          "department_key": "1.00",
+          "department_name": "1.00",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 24,
+          "department_key": "3.00",
+          "department_name": "3.00",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 25,
+          "department_key": "WL",
+          "department_name": "WEIGHT LOSS",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 26,
+          "department_key": "DOS",
+          "department_name": "0.99 DOWN",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 27,
+          "department_key": "1UP",
+          "department_name": "1.00ct UP",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 28,
+          "department_key": "3UP",
+          "department_name": "3.00ct UP",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 30,
+          "department_key": "Ass",
+          "department_name": "ASSORT",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": [
+                {
+                  "user_code": 173,
+                  "user_fullname": "MIX ASSORT",
+                  "user_short_name": "MIXASS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "department_code": 31,
+          "department_key": "hist12",
+          "department_name": "History Check1",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 32,
+          "department_key": "hist123",
+          "department_name": "History Check2",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 33,
+          "department_key": "hist",
+          "department_name": "history CSS",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 46,
+          "department_key": "SAMPLE_CSS",
+          "department_name": "sample test",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 62,
+          "department_key": "SELL_PAM",
+          "department_name": "sell pam",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 109,
+          "department_key": "SRK_USER",
+          "department_name": "ldfm",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 110,
+          "department_key": "DEPT_IC",
+          "department_name": "Dept IC",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 118,
+          "department_key": "SRK_USER",
+          "department_name": "zrkk",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 122,
+          "department_key": "SRK_USER",
+          "department_name": "karx",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 125,
+          "department_key": "SRK_USER",
+          "department_name": "kran",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 126,
+          "department_key": "DEPTMENT_IC",
+          "department_name": "Deptment ICz",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 143,
+          "department_key": "SRK_SHORTING",
+          "department_name": "yyud",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 144,
+          "department_key": "TESTDEPARTMENT",
+          "department_name": "TestDepartment",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 146,
+          "department_key": "APAM",
+          "department_name": "aPam",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 152,
+          "department_key": "DEPTMENT_IC",
+          "department_name": "Dep",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 169,
+          "department_key": "SRK_USER",
+          "department_name": "tyuu",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 176,
+          "department_key": "SRK_USER",
+          "department_name": "rtukyh",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 177,
+          "department_key": "SRK_SHORTING",
+          "department_name": "Sjhgj",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 179,
+          "department_key": "SRK_USER",
+          "department_name": "gjhkjk",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 183,
+          "department_key": "SRK_USER",
+          "department_name": "olcj",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 186,
+          "department_key": "SRK_USER",
+          "department_name": "pcap",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 209,
+          "department_key": "SRK_USER",
+          "department_name": "scte",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 211,
+          "department_key": "SRK_USER",
+          "department_name": "cyrq",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        },
+        {
+          "department_code": 215,
+          "department_key": "SRK_USER",
+          "department_name": "pwcb",
+          "category_list": [
+            {
+              "category_code": 2,
+              "category_key": "SUPER_ADMIN",
+              "category_name": "Super Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 3,
+              "category_key": "ADMIN",
+              "category_name": "Admin",
+              "user_list": []
+            },
+            {
+              "category_code": 4,
+              "category_key": "USER",
+              "category_name": "User",
+              "user_list": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company_code": 2,
+      "company_key": "SGOLDI",
+      "company_name": "SGOLDI",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": []
+      },
+      "department_list": []
+    },
+    {
+      "company_code": 3,
+      "company_key": "RGOLDI",
+      "company_name": "RGOLDI",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": []
+      },
+      "department_list": []
+    },
+    {
+      "company_code": 4,
+      "company_key": "VGOLDI",
+      "company_name": "VGOLDI",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": []
+      },
+      "department_list": []
+    },
+    {
+      "company_code": 5,
+      "company_key": "M",
+      "company_name": "MANEEDIAM",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": []
+      },
+      "department_list": []
+    },
+    {
+      "company_code": 6,
+      "company_key": "AGOLDI",
+      "company_name": "AGOLDI",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": []
+      },
+      "department_list": []
+    },
+    {
+      "company_code": 7,
+      "company_key": "DGOLDI",
+      "company_name": "DGOLDI",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": []
+      },
+      "department_list": []
+    },
+    {
+      "company_code": 8,
+      "company_key": "NEW",
+      "company_name": "NEW",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": []
+      },
+      "department_list": []
+    },
+    {
+      "company_code": 9,
+      "company_key": "DUBAI",
+      "company_name": "DUBAI",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": []
+      },
+      "department_list": []
+    },
+    {
+      "company_code": 10,
+      "company_key": "DE",
+      "company_name": "DEACTIVATE",
+      "master_admin_category": {
+        "category_code": 1,
+        "category_key": "MASTER_ADMIN",
+        "category_name": "Master Admin",
+        "user_list": []
+      },
+      "department_list": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<p-dialog header="Validate OTP" [(visible)]="validToken" [draggable]="false" [resizable]="false" [modal]="false"
+  [responsive]="true" [style]="{width: '250px'}" [blockScroll]="true" [closeOnEscape]="false" [closable]="false"
+  appendTo="body">
+  <div class="text-center">
+    <span>Please validate the OTP send to your registered mobile number.</span>
+    <div class="pt-3 pb-3">
+      <app-countdown></app-countdown>
+    </div>
+    <div class="pt-3 pb-3">
+      <p-inputMask [(ngModel)]="otpTxt" mask="9999" styleClass="otp-cls"></p-inputMask>
+    </div>
+  </div>
+  <p-footer class="p-grid p-justify-center p-2">
+    <button type="button" pButton icon="pi pi-check" (click)="validateOtp()" label="Validate Otp" [disabled]="!otpTxt" class="btn-cls"></button>
+  </p-footer>
+</p-dialog>

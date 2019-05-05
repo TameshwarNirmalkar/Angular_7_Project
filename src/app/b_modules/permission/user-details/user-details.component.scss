@@ -1,0 +1,80 @@
+:host ::ng-deep {
+  width: inherit;
+
+  .pop-cls {
+    width: 70%;
+
+    .ui-dialog-content {
+      // max-height: 200px;
+      overflow-y: auto;
+    }
+  }
+
+  .ui-table {
+    .ui-table-thead {
+      tr {
+        th {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  .popup-table-cls {
+    .ui-inputtext {
+      font-size: 11px;
+      padding: 5px;
+      width: 100%;
+    }
+
+    .ui-dropdown {
+      min-width: 100%;
+    }
+  }
+
+  .ui-treetable {
+    table {
+      font-size: 12px;
+    }
+
+    .ui-treetable-tbody>tr>td {
+      padding: 3px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+      .ui-treetable-toggler {
+        font-size: 8px;
+      }
+    }
+
+  }
+
+  .source-destinatin-cls {
+    width: 100%;
+    font-size: 12px;
+
+    .ui-dropdown-label {
+      padding: 0px 3px;
+      font-size: 12px;
+    }
+
+    .ui-dropdown-trigger {
+      .ui-dropdown-trigger-icon {
+        font-size: 11px;
+      }
+    }
+  }
+
+  .encrypted-cls {
+    background: repeating-linear-gradient(
+      45deg,
+      #99c7da,
+      #99c7da 5px,
+      #c4e4f1 5px,
+      #c4e4f1 10px
+    );
+  }
+
+}
+

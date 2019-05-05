@@ -1,0 +1,17 @@
+<div class="p-grid p-align-stretch p-nogutter">
+  <app-sidebar-navigation></app-sidebar-navigation>
+  <div class="p-col">
+    <div class="p-grid p-nogutter">
+      <app-main-header></app-main-header>
+      <div class="p-grid p-col-12 p-col-nogutter p-nogutter">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Global Components  -->
+<p-messages [value]="msgs" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'300ms'" styleClass="toast-message">
+</p-messages>
+
+<app-countdown></app-countdown>

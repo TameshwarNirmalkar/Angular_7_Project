@@ -1,0 +1,99 @@
+<section class="p-col-12">
+
+  <article class="p-col-12 p-grid">
+    <div class="p-col-6">
+      <p-table #tt [columns]="tableCol" [value]="tableData" [(selection)]="userSelected" selectionMode="multiple"
+        [scrollable]="true" scrollHeight="200px" [rowTrackBy]="trackByFunction">
+        <ng-template pTemplate="caption">
+          <section class="p-col-12 p-grid p-align-center">
+            <article class="p-col-12 p-col-nogutter">
+              <div class="ui-inputgroup search-cls">
+                <input type="text" pInputText size="50" placeholder="Search" class="width-100"
+                  (input)="tt.filterGlobal($event.target.value, 'contains')" />
+                <button pButton type="button" icon="fa fa-search" class="ui-button-secondary"></button>
+              </div>
+            </article>
+          </section>
+        </ng-template>
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th style="width: 3em">
+              <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+            </th>
+            <th *ngFor="let col of columns">
+              {{ col.header }}
+            </th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns" let-rowIndex="rowIndex">
+          <tr>
+            <td style="width: 3em">
+              <p-tableCheckbox [value]="rowData"></p-tableCheckbox>
+            </td>
+            <td>{{ rowData.user_fullname }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+
+    </div>
+
+    <div class="p-col-6">
+      <span class="p-col-12 text-info">PRABHU BHAI, SUPER ADMIN (SA)</span>
+      <div class="p-col-12 p-col-nogutter">
+        <label class="p-col-12 m-0">Start from</label>
+        <span class="p-col">
+          <p-calendar [(ngModel)]="startFrom" [showTime]="true" [showIcon]="true"></p-calendar>
+        </span>
+        <span class="p-col">OR</span>
+        <span><button pButton class="btn-cls" label="Now Onwards" (click)="showCurrentSelectedTime()"></button></span>
+      </div>
+      <div class="p-col-12 p-col-nogutter">
+        <label class="p-col-12 m-0">Allowed Hrs.</label>
+        <span class="p-col">
+          <p-inputMask mask="99"></p-inputMask>
+        </span>
+      </div>
+      <div class="p-col-12">
+        <span><button pButton class="btn-cls" label="Grant Permission"></button></span>
+      </div>
+    </div>
+  </article>
+
+
+
+  <article class="p-col-12 p-grid">
+    <h6>History for Login As</h6>
+    <p-table #ht [columns]="historyTableCol" [value]="histroyData" [(selection)]="historySelected"
+      selectionMode="multiple" [scrollable]="true" scrollHeight="200px">
+      <ng-template pTemplate="caption">
+        <section class="p-col-12 p-grid p-align-center">
+          <article class="p-col-12 p-col-nogutter">
+            <div class="ui-inputgroup search-cls">
+              <input type="text" pInputText size="50" placeholder="Search" class="width-100"
+                (input)="ht.filterGlobal($event.target.value, 'contains')" />
+              <button pButton type="button" icon="fa fa-search" class="ui-button-secondary"></button>
+            </div>
+          </article>
+        </section>
+      </ng-template>
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th *ngFor="let col of columns">
+            {{col.header}}
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr>
+          <td *ngFor="let col of columns">
+            <span *ngIf="(col.field === 'status'); else otherData" [ngClass]="(rowData.isActive) ? 'text-danger': 'text-success'">{{ rowData[col.field] }}</span>
+            <ng-template #otherData>
+              <span> {{ rowData[col.field] }}</span>
+            </ng-template>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </article>
+
+</section>

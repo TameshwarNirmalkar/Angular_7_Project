@@ -1,0 +1,17 @@
+:host ::ng-deep {
+
+    .add-resource-table {
+        font-size: 11px;
+    }
+    .ui-chkbox{
+        .ui-chkbox-box {
+            $hw: 15px;
+            height: $hw;
+            width: $hw;
+
+            .ui-chkbox-icon {
+                font-size: 13px;
+            }
+        }
+    }
+}

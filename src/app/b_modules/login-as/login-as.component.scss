@@ -1,0 +1,35 @@
+$light-blue: #c4e4f1;
+
+:host ::ng-deep {
+  width: inherit;
+
+  .login-as-component {}
+
+  .ui-table-scrollable-wrapper {
+    border-right: 1px solid #cccc;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .search-cls {
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+
+    .ui-inputtext {
+      &:not(:last-child) {
+        border: 0px;
+      }
+    }
+  }
+
+  .btn-cls {
+    background-color: $light-blue;
+    border: 1px solid rgba(67, 68, 83, 0.5);
+    color: #333333;
+    font-size: 11px;
+
+    .ui-button-icon-left {
+      margin-top: -0.4em;
+    }
+  }
+}

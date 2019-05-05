@@ -1,0 +1,229 @@
+<section class="p-col-12">
+  <article class="p-grid p-align-center">
+    <span class="p-grid p-col-fixed p-justify-start">
+      <p-button icon="pi pi-copy" label="Copy Permission" styleClass="btn-cls" [disabled]="disabledCopyPermission"
+        (onClick)="copyPermission()"></p-button>
+    </span>
+    <span class="p-grid p-col p-justify-end">
+      <p-button icon="pi pi-unlock" label="New Role" styleClass="btn-cls" (onClick)="newRole()"></p-button>
+      <p-button icon="pi pi-user-plus" label="New User" styleClass="btn-cls m-l-5" (onClick)="addUser()"></p-button>
+      <!-- <p-button icon="pi pi-key" label="Reset password" styleClass="btn-cls m-l-5" (onClick)="resetPassword()">
+      </p-button> -->
+    </span>
+  </article>
+</section>
+
+
+
+<!-- Data table -->
+<section class="p-col-12">
+  <div *ngIf="mastersPermissionUserList?.length">
+    <p-treeTable #tt [value]="mastersPermissionUserList | filter: searchFilterText" selectionMode="single"
+      [(selection)]="categoryPermissionSelected" [globalFilterFields]="['name', 'display_name']" [scrollable]="true"
+      [scrollHeight]="windowHeight" (onNodeExpand)="expandOn($event)" (onNodeCollapse)="collapseOff($event)"
+      expandableRows="true">
+      <!-- -->
+      <ng-template pTemplate="caption">
+        <section class="p-col-12 p-grid p-align-center">
+          <span class="p-col text-left">Department Wise User Details</span>
+          <article class="">
+            <div class="ui-inputgroup search-cls">
+              <input type="text" pInputText size="50" placeholder="Search" class="width-100"
+                (input)="tt.filterGlobal($event.target.value, 'contains')" />
+              <button pButton type="button" icon="fa fa-search" class="ui-button-secondary"></button>
+            </div>
+          </article>
+        </section>
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr>
+          <th *ngFor="let item of userDetailObject?.columnList" class="{{item?.class}}">{{item?.header}}</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
+        <tr [ttRow]="rowNode" [ngClass]="classCls[rowData.type]">
+          <td class="colw300" [ngClass]="{'font-weight-bold': rowData.mainHeader}" [title]="rowData?.name">
+            <p-treeTableToggler [rowNode]="rowNode"></p-treeTableToggler>
+            <!-- <p-treeTableCheckbox [value]="rowNode" *ngIf="rowData.type === 'CATEGORY'"></p-treeTableCheckbox> -->
+            <ng-container *ngIf="!rowData?.show_component">
+              {{ rowData?.name }}
+            </ng-container>
+            <a class="text-warning pr-3" *ngIf="rowData?.show_component"
+              (click)="toggleChangeDepartmentAndRolePopup(rowData, true)" role="button">{{ rowData?.name }}</a>
+          </td>
+          <td class="colw124">
+            {{rowData?.display_name}}
+          </td>
+          <!-- On click of View - Redirect to view resource detail page having 3 pannels -->
+          <td class="colw215">
+            <div class="d-flex p-align-center">
+              <a class="text-warning pr-3" *ngIf="!rowData.mainHeader && !rowData.subHeader"
+                (click)="navigateTo(rowData)" role="button">View</a>
+              <ng-container *ngIf="rowData.show_component">
+                <span>
+                  <p-dropdown [options]="sourceDestination" [(ngModel)]="rowData.view_type" placeholder="--"
+                    styleClass="source-destinatin-cls" panelStyleClass="source-dest-panel-cls" appendTo="body"
+                    (onChange)="sourceDestinationChange($event, rowData)"></p-dropdown>
+                </span>
+              </ng-container>
+            </div>
+          </td>
+          <td>
+            <div class="p-grid p-align-center p-nogutter">
+              <ng-container *ngIf="!rowData.mainHeader && !rowData.subHeader">
+                <button class="btn-cls mr-2 rounded-left rounded-right" [ngClass]="{'encrypted-cls': item.encrypted}"
+                  *ngFor="let item of rowData.enc_dec_list">
+                  <span class="d-flex p-align-center">
+                    {{ item.label }}
+                    <em class="pl-2 fa fa-times-circle" (click)="removeEncDec(rowData, item)" role="button"></em>
+                  </span>
+                </button>
+
+                <button class="btn-cls rounded-left rounded-right bg-warning border-warning"
+                  (click)="openEDPopup(rowData)">
+                  <em class="fas fa-user-edit text-white"></em>
+                </button>
+              </ng-container>
+            </div>
+          </td>
+        </tr>
+      </ng-template>
+    </p-treeTable>
+  </div>
+</section>
+
+<!-- All Popup -->
+<p-dialog [modal]="true" [(visible)]="popupData.isPoupuVisible" [draggable]="false" [resizable]="false"
+  styleClass="pop-cls" (onHide)="onDialogHide($event)">
+  <p-header>
+    {{ popupData.popupHeader }}
+  </p-header>
+  <div class="popup-contentBody">
+    <ng-container [ngTemplateOutlet]="popupData.templateName"></ng-container>
+  </div>
+</p-dialog>
+
+
+<ng-template #newRoleTemplate>
+  <section class="p-grid p-col-12">
+    <div class="form-group p-col-6">
+      <label>Role Name</label>
+      <input type="text" pInputText [(ngModel)]="userRole.roleName" class="form-control" />
+    </div>
+    <div class="form-group p-col-6">
+      <label>Role Code</label>
+      <input type="text" pInputText [(ngModel)]="userRole.roleKey" class="form-control" />
+    </div>
+  </section>
+  <div class="p-grid p-justify-end">
+    <div class="p-grid p-justify-between">
+      <button pButton icon="pi pi-times" label="Cancel" class="btn-cls mr-3"
+        (click)="popupData.isPoupuVisible = false"></button>
+      <button pButton [icon]="(buttonIconLoader) ? 'pi pi-spin pi-spinner' : 'pi pi-save'" label="Save" class="btn-cls"
+        (click)="saveRoleEvent()" [disabled]="!userRole.roleName && !userRole.roleKey"></button>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #newUserTemplate>
+  <section class="p-grid p-col-12">
+    <p-table [value]="newUserPayload" styleClass="popup-table-cls">
+      <ng-template pTemplate="header">
+        <tr>
+          <th style="width:150px;">Department Name</th>
+          <th style="width:140px;">Full Name</th>
+          <th style="width:100px;">Login Name</th>
+          <th>User Role</th>
+          <th>Country Code</th>
+          <th>Phone No.</th>
+          <th>E-mail</th>
+          <th style="width:80px;" class="text-center">Permission</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData>
+        <tr>
+          <td>
+            <p-dropdown [options]="rowData.department_list" [(ngModel)]="rowData.department_code" appendTo="body"
+              filter="true" resetFilterOnHide="true">
+            </p-dropdown>
+          </td>
+          <td><input type="text" pInputText [(ngModel)]="rowData.user_fullname" style="width:100%"
+              placeholder="Enter full name" /></td>
+          <td><input type="text" pInputText [(ngModel)]="rowData.user_loginname" style="width:100%"
+              placeholder="Enter login name" /></td>
+          <td>
+            <p-dropdown [options]="rowData.user_list" [(ngModel)]="rowData.category_code" appendTo="body" filter="true"
+              resetFilterOnHide="true"></p-dropdown>
+          </td>
+          <td>
+            <input type="text" pInputText [(ngModel)]="rowData.country_phone_code" placeholder="Enter country code"
+              maxlength="3" style="width:100%" /></td>
+          <td>
+            <p-inputMask [(ngModel)]="rowData.phone_number" mask="9999999999" placeholder="Enter phone number">
+            </p-inputMask>
+          </td>
+          <td><input type="text" pInputText [(ngModel)]="rowData.email" style="width:100%" placeholder="Enter email" />
+          </td>
+          <td class="text-center"><em class="fa fa-key"></em></td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </section>
+  <div class="d-flex pt-2 p-justify-end">
+    <div class="d-flex p-justify-between">
+      <button pButton icon="pi pi-times" label="Cancel" class="btn-cls mr-3"
+        (click)="popupData.isPoupuVisible = false"></button>
+      <button pButton icon="pi pi-save" label="Save" class="btn-cls" (click)="saveUserEvent()"></button>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #encryptionDecryptionTemplate>
+  <app-encrption-decryption [popupData]="popupData" *ngIf="popupData.currentSelect"></app-encrption-decryption>
+</ng-template>
+
+<div *ngIf="departmentAndRolePopupObject?.visibleFlag">
+  <p-dialog [modal]="true" [(visible)]="departmentAndRolePopupObject.visibleFlag" [draggable]="false"
+    [resizable]="false" styleClass="pop-cls" (onHide)="toggleChangeDepartmentAndRolePopup(null, flag)"
+    header="Change Department & Role">
+    <div>
+      <nav aria-label="breadcrumb" *ngIf="departmentAndRolePopupObject.selectedUserData">
+        <ol class="breadcrumb bg-info">
+          <li class="breadcrumb-item text-white" *ngFor="let item of departmentAndRolePopupObject.selectedUserData">
+            <a>{{ item }}</a>
+          </li>
+        </ol>
+      </nav>
+      <p-table>
+        <ng-template pTemplate="header">
+          <tr>
+            <th class="text-center">Department Name</th>
+            <th class="text-center">Role</th>
+          </tr>
+          <tr>
+            <th class="bg-light">
+              <p-dropdown [options]="departmentAndRolePopupObject.department_list" filter="true"
+                [(ngModel)]="departmentAndRolePopupObject.selectedDepartment" placeholder="Select Department"
+                appendTo="body" [style]="{'width':'100%'}"></p-dropdown>
+            </th>
+            <th class="bg-light">
+              <p-dropdown [options]="departmentAndRolePopupObject.role_list" filter="true"
+                [(ngModel)]="departmentAndRolePopupObject.selectedRole" placeholder="Select Role" appendTo="body"
+                [style]="{'width':'100%'}">
+              </p-dropdown>
+            </th>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+    <p-footer>
+      <div class="pull-right marg5">
+        <button pButton type="button" label="Cancel" class="btn-cls" (click)="toggleChangeDepartmentAndRolePopup(null, false)"></button>
+        <button pButton type="button" class="btn-cls" label="Change &amp; Save" (click)="saveChangeDepartmentAndRole()"></button>
+        <button pButton type="button" class="btn-cls" label="Reset Password" (click)="resetPassword()"></button>
+      </div>
+    </p-footer>
+  </p-dialog>
+</div>
+
+<app-spinner [isLoading]="treeLoading"></app-spinner>

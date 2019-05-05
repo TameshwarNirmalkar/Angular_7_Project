@@ -1,0 +1,19 @@
+:host ::ng-deep {
+  .w110 {
+    width: 110px;
+  }
+
+  .w150 {
+    width: 150px;
+  }
+
+  .accordion-cls {
+    .ui-table-scrollable-header-box {
+      margin-right: 17px !important; // override to inline style, no other options.
+    }
+
+    .ui-table-scrollable-body {
+      overflow-y: scroll;
+    }
+  }
+}

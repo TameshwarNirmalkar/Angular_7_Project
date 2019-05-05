@@ -1,0 +1,20 @@
+<div class="p-col-12">
+  <section>
+    <ng-container
+      *ngIf="(resourceParam && currentRoleView && (currentRoleView?.viewPannels.length > 1)) else noResource">
+      <div *ngFor="let item of currentRoleView?.viewPannels">
+        <app-expand-collapsed-panel [headerTitle]="item.header" [viewType]="item.key" [collapsed]="item.collapsed"
+          [resourceData]="item.data" (iconClickEvent)="deleteResource($event)" (assignedClickEvent)="assignTo($event)"
+          [loader]="item.isLoading">
+        </app-expand-collapsed-panel>
+      </div>
+    </ng-container>
+    <!-- TODO: this will be enbale after demo
+      <article class="d-flex p-col-12 p-justify-end p-col-nogutter pt-2 pb-2">
+      <button pButton (onClick)="addNewResource()" class="btn-cls" label="New Resource"></button>
+    </article> -->
+    <ng-template #noResource>
+      <p-message severity="info" text="Resources not available" styleClass="msg-cls"></p-message>
+    </ng-template>
+  </section>
+</div>

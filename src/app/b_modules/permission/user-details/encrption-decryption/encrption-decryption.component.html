@@ -1,0 +1,40 @@
+<section class="p-grid p-col-12">
+  <p-table [value]="tableData" selectionMode="multiple" [metaKeySelection]="true">
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="width:40px;">
+          <p-checkbox [(ngModel)]="encDecAll" binary="true" styleClass="checkbox-cls"
+            (onChange)="checkedUncheckedAll($event)"></p-checkbox>
+        </th>
+        <th style="width: 80px;">
+          <p-inputSwitch [(ngModel)]="encDecSwitchAll" [disabled]="!encDecAll" (onChange)="switchAll($event)">
+          </p-inputSwitch>
+        </th>
+        <th>Select All</th>
+        <th>Party Details</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData>
+      <tr [ngClass]="{'text-primary': rowData.encrypted}">
+        <td>
+          <p-checkbox [(ngModel)]="rowData.has_checkbox" binary="true" styleClass="checkbox-cls"
+            (onChange)="singleCheckedUnchecked($event, rowData)"></p-checkbox>
+        </td>
+        <td>
+          <p-inputSwitch [(ngModel)]="rowData.encrypted" [disabled]="!rowData.has_checkbox"
+            (onChange)="switchSingle($event, rowData)"></p-inputSwitch>
+        </td>
+        <td>{{ labelForEncDec[rowData.encrypted] }}</td>
+        <td>{{ rowData.label }}</td>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="footer">
+      <tr>
+        <td colspan="4" class="text-right">
+          <button pButton icon="pi pi-times" label="Close" class="btn-cls mr-3" (click)="selectedData.isPoupuVisible = false"></button>
+          <button pButton icon="pi pi-save" label="Save" class="btn-cls" (click)="editEncDec(rowData)"></button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</section>

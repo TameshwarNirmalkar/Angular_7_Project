@@ -1,0 +1,26 @@
+// CSS Reset, comment out if not required or using a different module
+// @import '~minireset.css/minireset';
+@import '~igniteui-angular/lib/core/styles/themes/index';
+/**
+    Global Style Rules
+ */
+$primary-color: #2ab759; // Some green shade I like
+$secondary-color: #f96a88; // Watermelon pink
+$my-color-palette: igx-palette($primary: $primary-color,
+$secondary: $secondary-color);
+// Navbar configuration
+$my-navbar-theme: igx-navbar-theme($background: white);
+
+// Navdrawer configuration
+$navdrawer-theme: igx-navdrawer-theme($background: #2d313a,
+$item-active-background: #c4e4f1,
+$item-icon-color: #ffffff,
+$border-radius: 0px,
+$border-color: #ccc,
+);
+
+// Override themes
+@include igx-core();
+@include igx-theme($my-color-palette);
+@include igx-navbar($my-navbar-theme);
+@include igx-navdrawer($navdrawer-theme);

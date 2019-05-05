@@ -1,0 +1,15 @@
+<div class="d-flex">
+  <p-tabMenu #tabMenuView [model]="tabList" [activeItem]="activeItem" styleClass="tab-list-wrapper" *ngIf="tabList">
+    <ng-template pTemplate="item" let-item let-i="index">
+      <span style="position: relative; text-align: center;">
+        <span class="ui-menuitem-icon" [ngClass]="item.icon" *ngIf="item.icon" style="font-size: 2em"></span>
+        <span class="ui-menuitem-text">
+          {{item.label}}
+        </span>
+        <a tabindex="0" class="ui-menuitem-icon" (click)="closeItem($event, i)" style="position: absolute; right: -1.8em; top: -.8em; padding: 0em; margin-right: 0em;" *ngIf="item.closeable">
+          <span class="pi pi-times-circle"></span>
+        </a>
+      </span>
+    </ng-template>
+  </p-tabMenu>
+</div>

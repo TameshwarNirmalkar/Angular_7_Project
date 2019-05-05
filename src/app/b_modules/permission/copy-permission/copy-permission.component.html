@@ -1,0 +1,121 @@
+<div class="copy-permission">
+  <div class="p-col-12">
+    <h5 class="pt-2 pb-2">Copy Permission for User</h5>
+
+    <section class="p-grid p-nogutter">
+
+      <article class="p-col-4 border-info border">
+        <div class="p-grid">
+          <h6 class="p-col-12 bg-info text-white">Source User</h6>
+          <div class="p-col-7 text-capitalize">{{ sourceUser?.name | lowercase }}</div>
+          <div class="d-flex flex-wrap p-col-12">
+            <div class="p-col-12 p-col-nogutter mb-2">
+              <p-table [value]="sourceUser?.enc_dec_list" [(selection)]="selectedEncDec" selectionMode="multiple">
+                  <ng-template pTemplate="header">
+                    <tr>
+                      <th style="width:40px;">
+                        <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                      </th>
+                      <th>Encryption/Decryption</th>
+                    </tr>
+                  </ng-template>
+                  <ng-template pTemplate="body" let-rowData>
+                    <tr>
+                      <td><p-tableCheckbox [value]="rowData"></p-tableCheckbox></td>
+                      <td>{{ rowData.label }}</td>
+                    </tr>
+                  </ng-template>
+              </p-table>
+            </div>
+            <div class="p-col-12 p-col-nogutter">
+              <p-table [value]="assignedResourceList" [scrollable]="true" scrollHeight="180px" [(selection)]="selectedResource" selectionMode="multiple"
+              *ngIf="assignedResourceList else noRecord">
+                <ng-template pTemplate="header">
+                  <tr>
+                    <th style="width:40px;">
+                      <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                    </th>
+                    <th>Resources</th>
+                  </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-rowData>
+                  <tr>
+                    <td style="width:40px;"><p-tableCheckbox [value]="rowData"></p-tableCheckbox></td>
+                    <td>{{ rowData.payload_key }} {{ rowData.resource_name }}</td>
+                  </tr>
+                </ng-template>
+              </p-table>
+              <ng-template #noRecord>
+                <p-message severity="info" text="Record not found" styleClass="msg-cls"></p-message>
+              </ng-template>
+            </div>
+            
+          </div>
+        </div>
+      </article>
+
+      <article class="p-col-fixed p-grid p-dir-col p-justify-center p-2">
+        <button type="button" pButton class="btn-cls mb-2" icon="fas fa-angle-right" (click)="onCopySelected()"></button>
+        <button type="button" pButton class="btn-cls" icon="fas fa-angle-double-right" (click)="onCopyAll()"></button>
+      </article>
+
+
+      <!-- Destination User -->
+      <article class="p-col p-dir-col border-info border">
+        <div class="p-grid">
+            <h6 class="p-col-12 bg-info text-white">Destination User</h6>
+            <div class="p-grid p-col-6" *ngFor="let item of destinationUser">
+              <span class="p-col mr-2 ml-2 d-flex text-capitalize">{{ item?.comp?.name | lowercase }}</span>
+              <div class="p-col-12 p-col-nogutter">
+                <div class="p-col-12">
+                  <p-table [value]="item?.comp?.enc_dec_list" [scrollable]="true" scrollHeight="120px">
+                      <ng-template pTemplate="header">
+                        <tr>
+                          <th>Encryption/Decryption</th>
+                        </tr>
+                      </ng-template>
+                      <ng-template pTemplate="body" let-rowData>
+                        <tr>
+                          <td>
+                            <div class="p-grid p-align-center p-col-12">
+                              <span class="p-col p-col-nogutter">{{ rowData.label }}</span>
+                              <em class="fa fa-times-circle text-danger" *ngIf="rowData.has_checkbox" (click)="removeEncDec(rowData, item.comp)" role="button"></em>
+                            </div>
+                          </td>
+                        </tr>
+                      </ng-template>
+                  </p-table>
+                </div>
+                <div class="p-col-12">
+                  <p-table [value]="item?.users" [scrollable]="true" scrollHeight="200px" *ngIf="item?.users else noRecord">
+                    <ng-template pTemplate="header">
+                      <tr>
+                        <th>Resources</th>
+                      </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-rowData>
+                      <tr>
+                        <td>
+                          <div class="p-grid p-align-center p-col-12">
+                            <span class="p-col p-col-nogutter">{{ rowData.payload_key }} {{ rowData.resource_name }}</span>
+                            <em class="fa fa-times-circle text-danger" *ngIf="rowData.is_disabled" (click)="removeResource(rowData, item.comp)" role="button"></em>
+                          </div>
+                        </td>
+                      </tr>
+                    </ng-template>
+                  </p-table>
+                  <ng-template #noRecord> 
+                    <p-message severity="info" text="Record not found" styleClass="msg-cls"></p-message>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+      </article>
+      <article class="p-grid p-col-12 p-justify-end pt-2">
+        <button pButton label="Save" icon="fa fa-save" class="btn-cls" (click)="savePermission()"></button>
+      </article>
+    </section>
+
+  </div>
+</div>

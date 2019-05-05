@@ -1,0 +1,10 @@
+<header class="p-col-12 border-bottom header__padd">
+  <section class="p-grid p-align-center">
+    <span class="p-col-fixed"><img src="./assets/images/header-logo.png" /></span>
+    <span class="d-flex p-col p-justify-end">
+      <span class="time-cls pr-3">{{ showDateTime }}</span>
+      <span class="pr-2">{{ loggedUserName }}</span>
+      <em class="fas fa-user-lock text-danger" (click)="logout()" role="button"></em>
+    </span>
+  </section>
+</header>
